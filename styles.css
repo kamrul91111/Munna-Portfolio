@@ -1,0 +1,96 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.main {
+  margin-inline: 5dvw;
+}
+
+.banner {
+  border: 2px dashed;
+  padding: 30px;
+  min-height: 50dvh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.aboutme,
+.portfolio,
+.contact-form {
+  margin-block: 20px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.content-item {
+  border: 1px solid;
+  min-height: 30dvh;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.contact-form {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 20px;
+  display: grid;
+  place-content: center;
+}
+
+.text-input {
+  width: 30dvw;
+  margin-block: 10px;
+}
+
+.message {
+  min-height: 29dvh;
+}
+
+.submit-button {
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: rgba(186, 186, 0, 0.953);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.submit-button:hover {
+  transform: scale(0.98);
+  background-color: rgba(211, 211, 21, 0.953);
+}
+
+.submit-button:active,
+.submit-button:focus {
+  border: 2px dashed greenyellow;
+}
+
+.submit-button:disabled {
+  background-color: grey;
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+  .content-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+}
